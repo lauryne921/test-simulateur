@@ -11,6 +11,7 @@ document.getElementById('calcul-btn').addEventListener('click', () => {
     const householdIncome = parseFloat(document.getElementById('household-income').value);
 
     const turnoverMinusCost = turnover - cost;
+    console.log(turnoverMinusCost);
 
     eurlSituation(turnoverMinusCost, cost, situation, numberOfChild, householdIncome, 'IS', 'non');
 });
